@@ -1,7 +1,29 @@
 aid: erudifi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/erudifi.png
 name: Erudifi
-description: Erudifi is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  ErudiFi (ErudiFi Pte. Ltd., formerly Dana Cita Pte. Ltd., a Singapore-registered
+  company) is an education-financing technology company on a mission to expand access
+  to affordable financial services for students across Southeast Asia. It operates
+  two consumer lending platforms: Bukas in the Philippines, which provides secure,
+  integrated tuition installment plans in partnership with top colleges and
+  universities, and Danacita in Indonesia, a peer-to-peer education-financing
+  platform registered with the OJK that funds diploma, bachelor's, master's, and
+  short-course programs. ErudiFi is backed by investors including 500 Global and
+  Helicap. The company maintains a small public GitHub presence (internal tooling,
+  a data-quality checker, and a Danacita UI kit) but publishes no public developer
+  API, OpenAPI specification, SDK, or MCP server.
 url: https://raw.githubusercontent.com/api-evangelist/erudifi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Fintech
+- Education
+- Student Financing
+- Lending
+- Financial Services
+- Southeast Asia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/erudifi-domain-security.yml
 - type: Website
   url: https://erudifi.com
+- type: GitHubOrganization
+  url: https://github.com/erudifi
+- type: Blog
+  url: https://danacita.co.id/blog/
+- type: PrivacyPolicy
+  url: https://bukas.ph/privacy-policy/
+- type: TermsOfService
+  url: https://bukas.ph/terms/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
